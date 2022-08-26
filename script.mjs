@@ -124,6 +124,7 @@ const getCard = () => {
         // card.style.backgroundImage = `('src: https://natanovik.github.io/priv_repo/data/mythicCards/${color}/${resultCardBlue}.png')`
 
     }
+
     if(color === 'brown') {
         let resultCardBrown = currentDeckBrown[Math.floor(Math.random()*currentDeckBrown.length)].cardFace
         card.style.backgroundImage = `url('./assets/MythicCards/${color}/${resultCardBrown}.png')`
