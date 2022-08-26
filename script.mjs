@@ -75,6 +75,12 @@ const shuffleDeck = () => {
         currentDeckBrown = brownCards?.filter(el => el.difficulty !== 'hard')
         currentDeckGreen = greenCards?.filter(el => el.difficulty !== 'hard')
     }
+
+    if(levelDifficulty === 'hard') {
+        currentDeckBlue = blueCards?.filter(el => el.difficulty !== 'easy')
+        currentDeckBrown = brownCards?.filter(el => el.difficulty !== 'easy')
+        currentDeckGreen = greenCards?.filter(el => el.difficulty !== 'easy')
+    }
 }
 // =======================================================================================================
 
@@ -109,15 +115,19 @@ const getCard = () => {
 //todo refactor color
     if(color === 'green') {
         let resultCardGreen = currentDeckGreen[Math.floor(Math.random()*currentDeckGreen.length)].cardFace
-        card.style.backgroundImage = `url('./assets/MythicCards/${color}/${resultCardGreen}.png')`
+        // card.style.backgroundImage = `url('./assets/MythicCards/${color}/${resultCardGreen}.png')`
+        card.style.backgroundImage = `src('https://github.com/NataNovik/priv_repo/codejam-eldritch/data/mythicCards/${color}/${resultCardGreen}.png')`
     }
     if(color === 'blue') {
         let resultCardBlue = currentDeckBlue[Math.floor(Math.random()*currentDeckBlue.length)].cardFace
-        card.style.backgroundImage = `url('./assets/MythicCards/${color}/${resultCardBlue}.png')`
+        // card.style.backgroundImage = `url('./assets/MythicCards/${color}/${resultCardBlue}.png')`
+        card.style.backgroundImage = `src('https://github.com/NataNovik/priv_repo/codejam-eldritch/data/mythicCards/${color}/${resultCardBlue}.png')`
+
     }
     if(color === 'brown') {
         let resultCardBrown = currentDeckBrown[Math.floor(Math.random()*currentDeckBrown.length)].cardFace
-        card.style.backgroundImage = `url('./assets/MythicCards/${color}/${resultCardBrown}.png')`
+        // card.style.backgroundImage = `url('./assets/MythicCards/${color}/${resultCardBrown}.png')`
+        card.style.backgroundImage = `src('https://github.com/NataNovik/priv_repo/codejam-eldritch/data/mythicCards/${color}/${resultCardBrown}.png')`
     }
 }
 
