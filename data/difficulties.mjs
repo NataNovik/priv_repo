@@ -1,3 +1,4 @@
+
 const difficulties = [
   {
     id: 'easy',
