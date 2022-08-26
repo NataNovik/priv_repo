@@ -13,4 +13,4 @@ const difficulties = [
   },
 ]
 
-export default difficulties
+export {difficulties}

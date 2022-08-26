@@ -1,4 +1,4 @@
-import ancientsData from "./data/ancients.mjs";
+import {ancientsData} from "./data/ancients.mjs";
 import {
     brownCards,
     blueCards,
